@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { useState} from 'react';
+import Zoom from './zoom';
 import './App.css';
 
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const[joinMeeting,setJoinMeeting]= useState(false)
+
+return (
+  <div className="App">
+    {joinMeeting?(<Zoom/>):(
+      <div>
+        <label>email</label>
+    <input name="email" type="email"/><br/>
+    <label>name</label>
+    <input name="name" type="text"/><br/>
+    <label>password</label>
+    <input name="password" type="password"/><br/>
+    <button className="meet-btn" onClick={()=>setJoinMeeting(true)}>join Meeting</button>
     </div>
-  );
+    )
+}
+  </div>
+)
+  
 }
 
 export default App;
