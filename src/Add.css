@@ -1,0 +1,42 @@
+.add-todo{
+    text-align: center;
+    padding: 1%;
+}
+.add-todo input{
+width: 20%;
+
+}
+.heading{
+color:purple;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+.todo-container{
+    text-align: center;
+    padding: 1%;
+    font-size: 25px;
+    
+}
+.collection-item{
+margin-left: 39%;
+margin-right: 40%;
+width: 20%;
+
+}
+
+img{
+    width: 20px;
+    padding: 2%;
+    float: right;
+}
+ul{
+    text-align: center;
+}
+ul li {
+ text-decoration: none;
+ list-style: none; 
+ background-color: rgb(196, 154, 15);
+ border: 1px solid rgb(99, 89, 92) ;
+ padding: 0.7%;
+ text-align: center !important;
+}
